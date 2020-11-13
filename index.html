@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>Cifrado Vigenere</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"> 
+	<script src="js/jquery331.js"></script>
+	<script src="js/logica.js"></script>
+</head>
+<body>
+	<header class="contenido-encabezado" id="contenido-encabezado">
+	  	<div class="texto-encabezado">
+	      	<h1 class="titulo">
+				<span class="titulo-neon"> Cifrado Vigenere</span>
+			</h1>
+	      	<form id="cifrar">
+	          	<div class="form-group">
+	            	<h3 class="subtitulo">Mensaje: </h3><textarea type="form-text" class="form-control" id="texto" rows="5" onkeypress="return validarn(event)"></textarea>
+	         
+	          	</div>
+	          	<div class="form-group">
+	            	<h3 class="subtitulo">Clave: </h3> <input type="form-text" class="form-control" id="clave" onkeypress="return validarn(event)">
+	          	</div>
+	          
+	          	<div class="form-check" style="margin-top: 20px">
+	              	<label class="form-check-label">
+	                	<input class="form-check-input" type="radio" name="radios" id="cifrar" value="cifrar" checked>
+	                	Cifrar
+	              	</label>
+	          	</div>
+	          	<div class="form-check">
+	              	<label class="form-check-label">
+	                	<input class="form-check-input" type="radio" name="radios" id="descifrar" value="descifrar">
+	                	Descifrar
+	              	</label>
+	          	</div>
+	            
+	          	<button type="button" class="btn-link texto-regular" onclick="cifrado()" style="margin-top: 20px">Aceptar</button>
+	      	</form>
+	      	<p><h3 class="subtitulo">Resultado: <h5 id="resultado"></h5> </h3> </p>
+	      	
+	      	<br>
+	      	<h4 class="subtitulo" style="margin-top: 30px">Rodriguez Flores Daniel Grupo: 5IV8</h4>    
+	  	</div>
+	</header>
+</body>
+</html>
